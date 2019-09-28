@@ -3,6 +3,8 @@
 
 
 Lab 1 and 2:
+
+
 The range of integers that can be represented in Java using a primitive data type is only from −263 to 263 − 1. What if we need to manipulate integer values beyond this range?
 
 In this assignment I wrote a HugeInteger class which was able to represent arbitrarily large integer numbers. This class implemented arithmetic operations on integers such as addition, subtraction, multiplication, division and comparison. I had to implement this class without using Java predefined classes, unless specified otherwise.
