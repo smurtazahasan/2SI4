@@ -1,0 +1,133 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab1and2;
+/**
+ *
+ * @author Murtaza Hasan
+ */
+public class main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+       
+ 
+        HugeInteger h;
+        h = new HugeInteger("100");
+        System.out.println("H is: " + h.toString());
+        
+        System.out.println("H is negative: "+ h.getNeg());
+  
+        HugeInteger j;
+        j = new HugeInteger("-100");
+        System.out.println("J is: " + j.toString());
+        
+        System.out.println("J is negative: " + j.getNeg());
+             
+        HugeInteger k;
+        k = new HugeInteger(5);
+        
+        System.out.println("K is: " + k.toString());
+      
+        HugeInteger g;
+        g = j.add(h);
+        System.out.println("J + H is: " + g.toString());
+
+        
+        g = j.subtract(h);
+        System.out.println("J - H is: "+ g.toString());
+              
+        
+        
+        HugeInteger a;
+        a = new HugeInteger("-99");
+        System.out.println("A is negative: "+ a.getNeg());
+        
+        
+        g = j.add(a);
+        System.out.println("-100 + -99: "+g.toString());
+        
+        g = j.subtract(a);
+        System.out.println("-100 - -99: "+g.toString());
+        
+        HugeInteger b;
+        b = new HugeInteger("80");
+        
+        HugeInteger c;
+        c = new HugeInteger("20");
+        
+        HugeInteger d;
+        d = c.add(b);
+        System.out.println("20 +  80 is: " + d.toString());
+        
+        d = c.subtract(b);
+        System.out.println("20 - 80 is: " +d.toString());
+
+     
+ 
+        HugeInteger a1 = new HugeInteger("0");
+        HugeInteger b1 = new HugeInteger("-1000000");
+        HugeInteger c1 = new HugeInteger("4553344");
+        
+        HugeInteger d1 = new HugeInteger("-1444");
+        HugeInteger e1 = new HugeInteger("-11224556");
+        
+        System.out.println(a1.compareTo(b1));
+        System.out.println(b1.compareTo(a1));
+        
+        System.out.println(a1.multiply(b1));
+        System.out.println(a1.multiply(c1));
+        
+        System.out.println(d1.multiply(a1));
+        System.out.println(d1.multiply(e1));
+ 
+ 
+ 
+ 
+ 
+
+        HugeInteger h1 = new HugeInteger("10000001");
+
+        HugeInteger j1 = new HugeInteger("-1234567");
+        
+        HugeInteger g1;
+        
+        g1 = h1.multiply(j1);
+        
+        System.out.println(g1);
+ 
+ 
+     
+        HugeInteger f1 = new HugeInteger("1234");
+        
+        HugeInteger k1 = new HugeInteger("0");
+
+       
+        g1 = f1.divide(k1 );
+        System.out.println(g1);
+        
+
+        System.out.println(h1.toString() + "/" + j1.toString() + "=" + g1.toString());
+        
+        g1 = j1.divide(h1);
+        System.out.println(j1.toString() + "/" + h1.toString() + "=" + g1.toString());
+        
+        //neg divide pos
+        g1 = f1.divide(j1);
+        System.out.println(f1.toString() + "/" + j1.toString() + "=" + g1.toString());
+        
+        g1 = f1.divide(k1);
+        
+        System.out.println(f1.toString() + "/" + k1.toString() + "=" + g1.toString());
+        
+
+        
+  
+    }
+    
+}
